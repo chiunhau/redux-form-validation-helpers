@@ -1,0 +1,15 @@
+{
+  "name": "redux-form-validation-helpers",
+  "version": "0.0.1",
+  "description": "Some useful validation rules for quick developing with redux-form.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-form",
+    "validation"
+  ],
+  "author": "Chiun Hau You",
+  "license": "ISC"
+}
