@@ -11,5 +11,10 @@
     "validation"
   ],
   "author": "Chiun Hau You",
-  "license": "ISC"
+  "license": "ISC",
+  "repository" : { 
+    "type" : "git",
+    "url" : "https://github.com/chiunhau/redux-form-validation-so-easy"
+  }
+
 }
