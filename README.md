@@ -10,7 +10,7 @@ Let's assume we are working with redux-form's sync validations, then you would h
 ```js
 const validate => values => {
   ...
-  //OUR UGLY LENGTHY RULES
+  //MY UGLY LENGTHY RULES :(
   ...
 }
 
@@ -30,12 +30,12 @@ For some reasons I want to split those validation logics to somewhere and make t
 import vSetRules, {vMoreThan, vEmail, vROCId} from 'redux-form-validation-helpers'
 
 const validate = vSetRules([
-{name: 'username', rules: [vMoreThan(6)]},
-{name: 'email', rules: [vEmail()]},
-{name: 'id', rules: [vROCId()]}
+  {name: 'username', rules: [vMoreThan(6)]},
+  {name: 'email', rules: [vEmail()]},
+  {name: 'id', rules: [vROCId()]}
 ])
 
-const UserForm = reduxForm({form: 'user', validate})(props => {
+const UserForm = props => {
   return (
     <form onSubmit={props.handleSubmit}>
       <Field name="username" component={renderField} type="text" label="Name"/>
@@ -45,6 +45,10 @@ const UserForm = reduxForm({form: 'user', validate})(props => {
   )
 })
 
+export default reduxForm({
+  form: 'user',
+  validate
+})(UserForm)
 ```
 
 ## Available helpers (so far)
