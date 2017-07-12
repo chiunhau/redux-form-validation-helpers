@@ -1,8 +1,8 @@
-# redux-form-validation-helpers
-Some useful validation rules for quick developing with redux-form.
+# redux-form-validation-so-easy
+Some useful validation helpers for quick developing with redux-form.
 
 ## Installation
-`npm install --save redux-form-validation-helpers`
+`npm install --save redux-form-validation-so-easy`
 
 ## Usage
 Let's assume we are working with redux-form's sync validations, then you would have code like this:
@@ -27,7 +27,7 @@ export default reduxForm({
 For some reasons I want to split those validation logics to somewhere and make them reusable, so let me introduce my helpers and just replace the original `validate` function like this:
 
 ```js
-import vSetRules, {vMoreThan, vEmail, vROCId} from 'redux-form-validation-helpers'
+import vSetRules, {vMoreThan, vEmail, vROCId} from 'redux-form-validation-so-easy'
 
 const validate = vSetRules([
   {name: 'username', rules: [vMoreThan(6)]},

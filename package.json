@@ -1,5 +1,5 @@
 {
-  "name": "redux-form-validation-helpers",
+  "name": "redux-form-validation-so-easy",
   "version": "0.0.1",
   "description": "Some useful validation rules for quick developing with redux-form.",
   "main": "index.js",
